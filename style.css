@@ -15,6 +15,19 @@ body {
 
 .scene {
   transform-style: preserve-3d;
+  perspective: 500px;
+}
+
+.scene::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 2000px;
+  height: 2000px;
+  background: url(https://images.unsplash.com/photo-1492798241315-ab8ce221741e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1778&q=80);
+  background-size: 400px;
+  transform: translate3d(-1000px, -700px, 0) rotateX(90deg);
 }
 
 .container {
